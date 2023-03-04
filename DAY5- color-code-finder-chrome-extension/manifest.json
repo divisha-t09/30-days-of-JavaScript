@@ -1,0 +1,22 @@
+{
+    "name": "Color Finder",
+    "description": "An extension for finding color code",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "/images/picker_16.png",
+        "32": "/images/picker_32.png",
+        "64": "/images/picker_64.png"
+    }
+}
