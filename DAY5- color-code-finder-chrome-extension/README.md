@@ -7,8 +7,11 @@ It is a simple color picker extension for Google Chrome that allows users to eas
 To install this extension, follow these steps:
 
 -Clone this repository to your local machine using Git.
+
 -Open Google Chrome and navigate to the Extensions page (chrome://extensions/).
+
 -Enable Developer mode by toggling the switch in the top-right corner.
+
 -Click the "Load unpacked" button and select the directory where you cloned the repository.
 
 ## Usage
