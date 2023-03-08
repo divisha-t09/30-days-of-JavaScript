@@ -43,7 +43,7 @@ body {
     outline: none;
     width: 100%;
     box-shadow: none;
-    font-size: 0.5rem;
+    font-size: 0.9rem;
     font-weight: bold;
     padding: 8px 9px;
 }
@@ -71,11 +71,15 @@ body {
 }
 
 .details{
-    padding-left: 2px;
+    padding-left: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
 
 .details h2{
-    font-size: 12px;
+    font-size: 15px;
+    font-weight: bold;
     color: black;
 }
 
