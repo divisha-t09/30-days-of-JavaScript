@@ -15,6 +15,12 @@ body {
     flex-direction: column;
 }
 
+.icon {
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+}
+
 .container {
     width: 500px;
     height: 700px;
