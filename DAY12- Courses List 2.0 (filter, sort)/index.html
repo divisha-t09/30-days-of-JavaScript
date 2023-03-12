@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+    
+</head>
+
+<body>
+    <section class="container">
+        <div class="filter-section">
+            <div class="filter-options">
+                <ul class="list-group">
+                    <li data-filter="All" class="active"><a href="#">All</a></li>
+                    <li data-filter="Design&Development"><a href="#">Design & Development</a></li>
+                    <li data-filter="ProgrammingLanguages"><a href="#">Programming Lang.</a></li>
+                    <li data-filter="OtherCourses"><a href="#">Other Courses</a></li>
+                </ul>
+            </div>
+            <div class="sorting-options">
+                <span>Sort By:</span>
+                <select name="" id="select">
+                    <option value="Default">Default</option>
+                    <option value="HighToLow">High To Low</option>
+                    <option value="LowToHigh">Low To High</option>
+                </select>
+            </div>
+        </div>
+
+        <form>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="icon icon-search"
+                viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+            <input type="text" name="" id="search-list" placeholder="Search Courses" onkeyup="search()">
+        </form>
+
+        <div class="course-section">
+            <ul class="course-list">
+                <li data-category="" class="courses" data-item="Design&Development" data-price="">
+                    <img src="./assets/add-dev-course.jpeg" alt="">
+                    <div class="details">
+                        <h2>App Developement Course</h2>
+                        
+                    </div>
+                    <h3>Rs. 12,000</h3>
+                </li>
+
+
+                <li data-category="" class="courses" data-item="OtherCourses" data-price="">
+                    <img src="./assets/ai-ml-course.jpeg" alt="">
+                    <div class="details">
+                        <h2>AI nad Machine Learning Course</h2>
+                        
+                    </div>
+                    <h3>Rs. 19,000</h3>
+                </li>
+
+
+                <li data-category="" class="courses" data-item="OtherCourses" data-price="">
+                    <img src="./assets/blockchain-course.jpeg" alt="">
+                    <div class="details">
+                        <h2>Learn abour Blockchain</h2>
+                        
+                    </div>
+                    <h3>Rs. 16,000</h3>
+                </li>
+
+
+                <li data-category="" class="courses" data-item="OtherCourses" data-price="">
+                    <img src="./assets/bm-course.jpeg" alt="">
+                    <div class="details">
+                        <h2>Business Management Course</h2>
+                        
+                    </div>
+                    <h3>Rs. 10,000</h3>
+                </li>
+
+
+                <li data-category="" class="courses" data-item="OtherCourses" data-price="">
+                    <img src="./assets/cloud-comp-course.jpeg" alt="">
+                    <div class="details">
+                        <h2>Cloud Computing Course</h2>
+                        
+                    </div>
+                    <h3>Rs. 13,000</h3>
+                </li>
+
+
+                <li data-category="" class="courses" data-item="Design&Development" data-price="">
+                    <img src="./assets/css-course.jpeg" alt="">
+                    <div class="details">
+                        <h2>CSS in Detail</h2>
+                        
+                    </div>
+                    <h3>Rs. 1,000</h3>
+                </li>
+
+
+                <li data-category="" class="courses" data-item="OtherCourses" data-price="">
+                    <img src="./assets/data-s-course.jpeg" alt="">
+                    <div class="details">
+                        <h2>Data Science Course</h2>
+                        
+                    </div>
+                    <h3>Rs. 15,000</h3>
+                </li>
+
+
+                <li data-category="" class="courses" data-item="Design&Development ProgrammingLanguages" data-price="">
+                    <img src="./assets/html-course.jpeg" alt="">
+                    <div class="details">
+                        <h2>HTML Full Course</h2>
+                        
+                    </div>
+                    <h3>Rs. 7,000</h3>
+                </li>
+
+
+                <li data-category="" class="courses" data-item="Design&Development ProgrammingLanguages" data-price="">
+                    <img src="./assets/java-course.jpeg" alt="">
+                    <div class="details">
+                        <h2>Java Course for Beginners</h2>
+                        
+                    </div>
+                    <h3>Rs. 12,000</h3>
+                </li>
+
+
+                <li data-category="" class="courses" data-item="ProgrammingLanguages" data-price="">
+                    <img src="./assets/js-course.png" alt="">
+                    <div class="details">
+                        <h2>JavaScript Full Course</h2>
+                        
+                    </div>
+                    <h3>Rs. 15,000</h3>
+                </li>
+
+
+                <li data-category="" class="courses" data-item="OtherCourses" data-price="">
+                    <img src="./assets/p-course.jpeg" alt="">
+                    <div class="details">
+                        <h2>Course for analysing yourself</h2>
+                        
+                    </div>
+                    <h3>Rs. 12,000</h3>
+                </li>
+
+
+                <li data-category="" class="courses" data-item="OtherCourses" data-price="">
+                    <img src="./assets/pd-course.png" alt="">
+                    <div class="details">
+                        <h2>Personality Development Course</h2>
+                        
+                    </div>
+                    <h3>Rs. 5,000</h3>
+                </li>
+
+
+                <li data-category="" class="courses" data-item="ProgrammingLanguages" data-price="">
+                    <img src="./assets/py-course.png" alt="">
+                    <div class="details">
+                        <h2>Python Course for Beginners</h2>
+                        
+                    </div>
+                    <h3>Rs. 8,000</h3>
+                </li>
+
+
+                <li data-category="" class="courses" data-item="Design&Development" data-price="">
+                    <img src="./assets/ui-ux-course.jpeg" alt="">
+                    <div class="details">
+                        <h2>UI/UX Design Course Course</h2>
+                        
+                    </div>
+                    <h3>Rs. 22,000</h3>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
+
+<script type="text/JavaScript" src="filter.js"></script>
