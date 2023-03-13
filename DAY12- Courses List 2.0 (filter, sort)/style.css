@@ -59,11 +59,18 @@ body {
     color: black;
 }
 
-.courses {
+.course-section ul{
+    padding: 20px 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.course-list li{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
+    flex-direction: row;
+}
+
+.courses {
     padding-bottom: 10px;
 }
 
@@ -73,15 +80,12 @@ body {
     border-radius: 5px;
     object-fit: cover;
 }
-.course-section ul {
-    padding: 20px 0;
-}
 
-.details{
+.details {
     padding-left: 12px;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
+    position: relative;
+    left: 3.5rem;
+    bottom: 3rem;
 }
 
 .details h2{
@@ -91,7 +95,12 @@ body {
 }
 
 .courses h3{
-    font-size: 12px;
+    position: relative;
+    left: 4.2rem;
+    bottom: 2.7rem;
+    font-size: 13px;
+    color: rgb(32, 32, 32);
+    font-weight: 800;
 }
 
 
@@ -99,7 +108,7 @@ body {
 
 .filter-section {
     width: 29rem;
-    background-color: white;
+    background: rgb(255, 255, 255);
     position: fixed;
     margin-bottom: 15px;
     height: 35px;
@@ -109,6 +118,7 @@ body {
 }
 
 .filter-options ul li{
+    background-color: rgb(255, 255, 255);
     list-style: none;
     padding: 2px;
     margin: 2.5px;
