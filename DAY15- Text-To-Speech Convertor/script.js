@@ -1,9 +1,12 @@
-const textarea = document.querySelector("textarea"),
-list = document.querySelector("select"),
+const textarea = document.querySelector(".content textarea"),
+list = document.querySelector(".options select"),
 btn = document.querySelector("button");
+
 let synth = speechSynthesis,
 isSpeaking = true;
+
 voices();
+
 function voices(){
     for(let voice of synth.getVoices()){
         let selected = voice.name === "Google US English" ? "selected" : "";
@@ -11,6 +14,7 @@ function voices(){
         list.insertAdjacentHTML("beforeend", option);
     }
 }
+
 synth.addEventListener("voiceschanged", voices);
 function textToSpeech(text){
     let utterance = new SpeechSynthesisUtterance(text);
@@ -21,6 +25,7 @@ function textToSpeech(text){
     }
     synth.speak(utterance);
 }
+
 btn.addEventListener("click", e =>{
     e.preventDefault();
     if(textarea.value !== ""){
