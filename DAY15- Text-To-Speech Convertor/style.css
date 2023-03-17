@@ -10,40 +10,48 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #5256AD;
+    background: #9b52ad;
   }
   ::selection{
     color: #fff;
-    background: #5256AD;
+    background: #9b52ad;
   }
   .container{
     width: 370px;
     padding: 25px 30px;
     border-radius: 7px;
     background: #fff;
-    box-shadow: 7px 7px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.1);
   }
 
   .container header{
     font-size: 28px;
-    font-weight: 500;
+    font-weight: 700;
     text-align: center;
+    letter-spacing: 2px;
+    color: #5e296b;
   }
+
   .container form{
-    margin: 35px 0 20px;
+    margin: 35px 0 25px;
   }
+  
   form .content{
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     flex-direction: column;
   }
+
   form .content label{
     font-size: 18px;
-    margin-bottom: 5px;
+    font-weight: 600;
+    margin-bottom: 6px;
   }
+
   form .content:nth-child(2) label{
-    font-size: 17px;
+    font-size: 19px;
   }
+
   form :where(textarea, select, button){
     outline: none;
     width: 100%;
@@ -51,18 +59,21 @@ body{
     border: none;
     border-radius: 5px;
   }
+
   form .content textarea{
     resize: none;
     height: 110px;
     font-size: 15px;
     padding: 8px 10px;
-    border: 1px solid #999;
+    border: 1px solid #787171;
   }
+
   form .content textarea::-webkit-scrollbar{
     width: 0px;
   }
+
   form .content .options{
-    height: 47px;
+    height: 40px;
     display: flex;
     padding: 0 10px;
     align-items: center;
@@ -70,36 +81,36 @@ body{
     justify-content: center;
     border: 1px solid #999;
   }
+  
   form .content select{
     font-size: 14px;
     background: none;
   }
+
   form .content select::-webkit-scrollbar{
     width: 8px;
   }
+
   form .content select::-webkit-scrollbar-track{
     background: #fff;
   }
+
   form .content select::-webkit-scrollbar-thumb{
     background: #888;
     border-radius: 8px;
     border-right: 2px solid #ffffff;
   }
+
   form button{
     height: 52px;
     color: #fff;
     font-size: 17px;
     cursor: pointer;
     margin-top: 10px;
-    background: #675AFE;
+    background: #851e9e;
     transition: 0.3s ease;
   }
+
   form button:hover{
-    background: #4534fe;
-  }
-  @media(max-width: 400px){
-    .wrapper{
-      max-width: 345px;
-      width: 100%;
-    }
+    background: #b823c3;
   }
