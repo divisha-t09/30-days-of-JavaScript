@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #8b6787;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    height: 30rem;
+    background-color: #8b6787;
+    padding: 30px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.container h2{
+    margin-top: 10px;
+    color: #300031;
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+}
+
+.s-word {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 2.5rem;
+    letter-spacing: 19px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    border: 1px solid #6b3f65;
+    padding: 10px 20px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+}
+
+.sol {
+    margin-bottom: 50px;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sol p{
+    width: 13rem;
+    height: 40px;
+    text-align: center;
+    background-color: #300031;
+    padding: 12px;
+}
+
+.hint {
+    border-radius: 10rem;
+    font-size: 0.6rem;
+    width: 40px;
+    color: rgb(226, 226, 202);
+}
+
+.time {
+    border-radius: 10rem;
+    color: rgb(248, 240, 199);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.content input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #6b3f65;
+    border-radius: 3px;
+    padding: 10px 10px;
+    margin-bottom: 35px;
+    font-size: 0.8rem;
+    color: #300031;
+    font-weight: 500;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    margin-bottom: 70px;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.btn button {
+    width: 100%;
+    height: 40px;
+    border-radius: 2px;
+    padding: 0 10px;
+    font-size: 0.8rem;
+    color: #300031;
+    font-weight: 800;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.new:hover {
+    background-color: #d09f9f;
+    color: #ffffff;
+}
+
+.submit:hover {
+    background-color: #8fc871;
+    color: #ffffff;
+}
