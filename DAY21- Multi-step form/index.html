@@ -1,26 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-    <title>Counter</title>
-  </head>
-  <body>
-    <div class="counter-container">
-      <h1>Counter</h1>
-      <span id="counter">0</span>
-      <div class="btn-container">
-        <button class="btn decrease">Decrease</button>
-        <button class="btn reset">Reset</button>
-        <button class="btn increase">Increase</button>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Login Form</h1>
+    <div class="progressbar">
+      <div class="step">
+        <p>Name</p>
+        <div class="points">
+          <span>1</span>
+        </div>
+        <div class="check fas fa-check"></div>
+      </div>
+      <div class="step">
+        <p>Contact</p>
+        <div class="points">
+          <span>2</span>
+        </div>
+        <div class="check fas fa-check"></div>
+      </div>
+      <div class="step">
+        <p>Submit</p>
+        <div class="points">
+          <span>3</span>
+        </div>
+        <div class="check fas fa-check"></div>
       </div>
     </div>
+    <div class="form">
+      <form action="">
+        <div class="page">
+          <div class="heading">Information</div>
+          <div class="field">
+            <div class="label">First Name</div>
+            <input type="text">
+          </div>
+          <div class="field">
+            <div class="label">Last Name</div>
+            <input type="text">
+          </div>
+          <div class="field">
+            <button>Next</button>
+          </div>
+        </div>
 
-    <script src="main.js"></script>
-  </body>
+        <div class="page">
+          <div class="heading">Contact Details</div>
+          <div class="field">
+            <div class="label">Email Address</div>
+            <input type="text">
+          </div>
+          <div class="field">
+            <div class="label">Mobile Number</div>
+            <input type="number">
+          </div>
+          <div class="field btn">
+            <button class="prev1 prev">Previous</button>
+            <button class="next1 next">Next</button>
+          </div>
+        </div>
+
+        <div class="page">
+          <div class="heading">Login Details</div>
+          <div class="field">
+            <div class="label">Username</div>
+            <input type="text">
+          </div>
+          <div class="field">
+            <div class="label">Password</div>
+            <input type="password">
+          </div>
+          <div class="field btn">
+            <button class="prev2 prev">Previous</button>
+            <button class="next2 next">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
 </html>
