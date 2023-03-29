@@ -1,31 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+	box-sizing: border-box;
+}
 
 body {
-    height: 100vh;
-    margin: 0;
-    background-color: rgb(148, 76, 215);
-    cursor: none;
+	background-color: #7aaf9b;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
 }
 
-.cursor {
-    z-index: 300;
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border: 1px solid #2696e8;
-    border-radius: 50%;
-    pointer-events: none;
-    box-shadow: 0 0 20px #2696e8, 0 0 60px #2696e8, 0 0 80px #2696e8;
-    transform: translate(-50%,-50%);
-    animation: colors 5s infinite;
+.panda {
+	background-color: #fff;
+	border-radius: 110% 110% 80% 80%;
+	position: relative;
+	height: 160px;
+	width: 170px;
 }
 
-@keyframes colors{
+.panda .ear {
+	background-color: #000;
+	border-radius: 50%;
+	position: absolute;
+	top: 4px;
+	height: 60px;
+	width: 55px;
+	z-index: -1;
+}
 
-    0%{
-        filter: hue-rotate(0deg);
-    }
+.panda .ear.left {
+	left: 0;
+}
 
-    100%{
-        filter: hue-rotate(360deg);
-    }
+.panda .ear.right {
+	right: 0;
+}
+
+.panda .eye {
+	background-color: #000;
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	height: 50px;
+	width: 40px;
+}
+
+.panda .eye.left {
+	border-radius: 100% 60% 80% 60%;	
+	transform: translateX(calc(-50% - 35px));
+}
+
+.panda .eye.right {
+	border-radius: 60% 100% 60% 80%;	
+	transform: translateX(calc(-50% + 35px));
+}
+
+.panda .eye .eye-roll {
+	background: #fff;
+	border-radius: 90%;
+	position: absolute;
+	top: 23px;
+	left: 20px;
+	height: 12px;
+	width: 12px;
+	transform-origin: center left;
+}
+
+.panda .cheeks {
+	background-color: #f4c4c4;
+	border-radius: 50%;
+	position: absolute;
+	top: 5.4rem;
+	height: 25px;
+	width: 25px;
+    filter: blur(4px);
+}
+
+.panda .c-left{
+    left: 1rem;
+}
+
+.panda .c-right{
+    right: 1rem;
+}
+
+.panda .mouth {
+	background: transparent;
+	border-radius: 0 0 50% 50%;
+	border: 1.8px solid transparent;
+	border-bottom: 2.3px solid #000;
+	position: absolute;
+	top: 48%;
+	left: 50%;
+	transform: translate(-50%);
+	height: 50px;
+	width: 50px;
 }
