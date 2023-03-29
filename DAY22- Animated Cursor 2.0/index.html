@@ -9,27 +9,19 @@
     
 </head>
 <body>
-    <div class="cursor"></div>
-
-        <script>
-            const cursor = document.querySelector(".cursor");
-        var timeout;
-
-        document.addEventListener("mousemove", (e) => {
-
-            cursor.setAttribute("style", "top: "+(e.pageY-10)+"px; left: "+(e.pageX-10)+"px")
-
-            function mouseStopped () {
-                cursor.style.display = 'none';
-            }
-
-            clearTimeout(timeout);
-            timeout = setTimeout(mouseStopped, 1000);
-        });
-
-        document.addEventListener("mouseout", () => {
-            cursor.style.display = 'none';
-        });
-        </script>
+    <div class="panda">
+        <div class="ear left"></div>
+        <div class="ear right"></div>
+        <div class="cheeks c-left"></div>
+        <div class="cheeks c-right"></div>
+        <div class="eye left">
+            <div class="eye-roll"></div>
+        </div>
+        <div class="eye right">
+            <div class="eye-roll"></div>
+        </div>
+        <div class="mouth"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
