@@ -1,24 +1,13 @@
-const cursor = document.querySelector(".cursor");
-        var timeout;
+const eyes = document.querySelectorAll('.eye-roll');
 
-        document.addEventListener("mousemove", (e) => {
-            // let x = e.pageX;
-            // let y = e.pageY;
-
-            cursor.setAttribute("style", "top: "+(e.pageY-10)+"px; left: "+(e.pageX-10)+"px")
-
-            // cursor.style.top = y + 'px';
-            // cursor.style.left = x + 'px';
-            // cursor.style.display = 'block';
-
-            function mouseStopped () {
-                cursor.style.display = 'none';
-            }
-
-            clearTimeout(timeout);
-            timeout = setTimeout(mouseStopped, 1000);
-        });
-
-        document.addEventListener("mouseout", () => {
-            cursor.style.display = 'none';
-        });
+window.addEventListener('mousemove', (e) => {
+	eyes.forEach(eye => {
+		const x = eye.getBoundingClientRect().left + (eye.clientWidth / 3);
+		const y = eye.getBoundingClientRect().top + (eye.clientHeight / 3);
+		const radian = Math.atan2(e.pageX - x, e.pageY - y);
+		const rot = (radian * (180 / Math.PI) * -1) + 90;
+		eye.style.transform = `rotate(${rot}deg)`;
+		
+		console.log(rot);
+	});
+});
