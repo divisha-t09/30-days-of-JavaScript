@@ -1,4 +1,225 @@
-*{
+* {
     margin: 0;
     padding: 0;
-}
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    padding: 0 10px;
+    min-height: 100vh;
+    background: #626069;
+  }
+
+  .bg-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .color-p{
+    height: 50vh;
+    width: 50%;
+  }
+
+  .container {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .container .color {
+    margin: 12px;
+    padding: 7px;
+    list-style: none;
+    cursor: pointer;
+    text-align: center;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 10px 25px rgba(52,87,220,0.08);
+    transition: all 0.3s ease;
+  }
+  .container .color:active {
+    transform: scale(0.95);
+  }
+  .color .rect-box {
+    width: 115px;
+    height: 118px;
+    border-radius: 2px;
+  }
+  .color:hover .rect-box {
+    filter: brightness(107%);
+  }
+  .color .hex-value {
+    display: block;
+    color: #444;
+    user-select: none;
+    font-weight: 500;
+    font-size: 1.15rem;
+    margin: 12px 0 8px;
+    text-transform: uppercase;
+  }
+  .refresh-btn {
+    position: fixed;
+    left: 50%;
+    bottom: 25rem;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    background: #01294c;
+    padding: 13px 20px;
+    border: 2px solid #fff;
+    transform: translateX(-50%);
+    box-shadow: 0 15px 30px rgba(52,87,220,0.2);
+    transition: all 0.3s ease;
+  }
+  .refresh-btn:hover {
+    background: #140b36;
+  }
+
+
+  .wrapper {
+    position: relative;
+    top: 1rem;
+    width: 350px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.06);
+  }
+  .wrapper .gradient-box {
+    height: 120px;
+    width: 100%;
+    border-radius: 7px;
+    background: linear-gradient(to left top, #5665E9, #A271F8);
+  }
+  .wrapper .row {
+    display: flex;
+    margin: 15px 0;
+    justify-content: space-between;
+  }
+  .options p {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+  .row :where(.column, button) {
+    width: calc(100% / 2 - 12px);
+  }
+  .options .select-box {
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: 1px solid #aaa;
+  }
+  .select-box select {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.12rem;
+    background: none;
+  }
+  .options .palette {
+    margin-left: 60px;
+  }
+  .palette input {
+    height: 41px;
+    width: calc(100% / 2 - 20px);
+  }
+  .palette input:last-child {
+    margin-left: 6px;
+  }
+  .wrapper textarea {
+    width: 100%;
+    color: #333;
+    font-size: 1.05rem;
+    resize: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  .buttons button {
+    padding: 5px 0;
+    border: none;
+    outline: none;
+    color: #fff;
+    margin: 0 0 -15px;
+    font-size: 1.09rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  .buttons .refresh {
+    background: #6C757D;
+  }
+  .buttons .refresh:hover {
+    background: #5f666d;
+  }
+  .buttons .copy {
+    background: #01294c;
+  }
+  .buttons .copy:hover {
+    background: #140b36;
+  }
+
+
+
+
+
+  @media screen and (max-width: 500px) {
+    .color-p{
+        height: 18vh;
+        width:  100%;
+      }
+
+    .container {
+      margin: 10px;
+    }
+    .container .color {
+      margin: 8px;
+      padding: 5px;
+      width: calc(100% / 5 - 10px);
+    }
+    .color .rect-box {
+      width: 60%;
+      height: 90px;
+    }
+    .color .hex-value {
+      font-size: 1.05rem;
+    }
+    .refresh-btn {
+    bottom: 27rem;
+      font-size: 1rem;
+    }
+  }
+
+
+  @media screen and (max-width: 500px) {
+    .wrapper {
+        position: relative;
+        top: 14rem;
+        width: 350px;
+        padding: 25px;
+    }
+    .row :where(.column, button) {
+      width: calc(100% / 2 - 8px);
+    }
+    .options .select-box {
+      padding: 8px 15px;
+    }
+    .options .palette  {
+      margin-left: 40px;
+    }
+    .options .colors {
+      display: flex;
+      justify-content: space-between;
+    }
+    .palette input {
+      width: calc(100% / 2 - 5px);
+    }
+    .palette input:last-child {
+      margin-left: 0;
+    }
+  }
